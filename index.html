@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Tracker App </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/globe-svg.svg">
+</head>
+
+<body>
+    <div class="container main">
+        <div class="logo-div">
+            <div class="bg-logo">
+                <img src="/assets/globe-svg.svg" alt="">
+            </div>
+            <div class="logo"> IP Tracker</div>
+            <h4>Discover the details behind every IP.</h4>
+        </div>
+        <div>
+            <div class="search">
+                <img class="relative anim" src="/assets/globe-svg.svg" alt="">
+                <input required placeholder="Enter Ip Address" class="input" id="searchip" name="ip">
+                <button class="submit" onclick="getIPData()">Search</button>
+            </div>
+            <a class="link" href="">Your IP Information</a>
+        </div>
+    </div>
+    <div class="container green">
+        <div class="ipinfo">
+            <div>
+                <p id="heading">IP Information</p>
+            </div>
+            <div>
+                <label>IP Address : </label>
+                <span id="ip">Loading. . .</span>
+            </div>
+            <div>
+                <label>IP version : </label>
+                <span id="version">Loading. . .</span>
+            </div>
+            <div>
+                <label>ISP : </label>
+                <span id="isp">Loading. . .</span>
+            </div>
+            <div>
+                <label>Country : </label>
+                <span id="country">Loading. . .</span>
+            </div>
+            <div>
+                <label>State/Region : </label>
+                <span id="region">Loading. . .</span>
+            </div>
+            <div>
+                <label>City : </label>
+                <span id="city">Loading. . .</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container m-5">
+        <h1> About
+            <img class="relative anim" src="/assets/globe-svg.svg" alt=""> IP Tracker
+        </h1>
+        <h4>IP Tracker is a simple web application that allows you to track IP addresses and gather valuable information
+            about them. With IP Tracker, you can easily find out the location, internet service provider, and other
+            details of any IP address. Our app is designed to be a useful tool for cybersecurity professionals, network
+            administrators, and anyone interested in learning more about IP addresses.</h4>
+    </div>
+    <footer>
+        <h4> Powered by @Ibrar Ullah</h4>
+        <a target="_" href="https://github.com/ibrarullah23"><img src="assets/github.svg" alt=""></a>
+        <a target="_" href="https://www.linkedin.com/in/ibrar-ullah-23m/"><img src="assets/linkedin.svg" alt=""></a>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
